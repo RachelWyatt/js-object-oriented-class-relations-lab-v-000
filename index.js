@@ -30,6 +30,20 @@ class Passenger {
     this.name = name ;
     store.passengers.push(this);
   }
+  
+    trips() {
+    return store.trips.filter(
+      function(trip) {
+        return trip.passengerId === this.id;
+      }.bind(this) //bind the inner function to this (this is window since it's a callback)
+    );
+  }
+
+  drivers() {
+    return this.trips().map(function(trip) {
+      return trip.driver(); //calling driver function in Trip class
+    });
+  }
 }
 
 class Trip {
