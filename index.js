@@ -19,7 +19,7 @@ class Passenger {
 }
 
 class Trip {
-  constructor(driver, passender) {
+  constructor(driver, passenger) {
     if (driver) {
       this.driverId = driver.id;
     }
