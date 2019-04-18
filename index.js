@@ -18,7 +18,7 @@ class Passenger {
 }
 
 class Trip {
-  constructor(driverId, passenderId) {
+  constructor(driver, passender) {
     
   }
 }
