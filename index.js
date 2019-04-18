@@ -17,4 +17,8 @@ class Passenger {
   }
 }
 
-class Trip
+class Trip {
+  constructor(driverId, passenderId) {
+    
+  }
+}
